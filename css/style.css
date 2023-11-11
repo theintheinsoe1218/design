@@ -87,3 +87,49 @@ body {
 .footers span {
   margin-top: 10px;
 }
+
+/* 2d */
+
+.flesh-content {
+  height: 530px;
+  /* background-color: #b6c5d8; */
+  position: relative;
+}
+
+.flesh-card {
+  height: 100px;
+  position: absolute;
+  top: 70px;
+  border-radius: 10px 10px;
+}
+
+.flesh-card span {
+  font-size: 40px;
+  color: #2a576c;
+}
+
+.flesh-card p {
+  color: #2a576c;
+}
+
+.card {
+  color: #2a576c;
+  padding: 15px 0;
+}
+
+.results {
+  text-align: center;
+  color: #2a576c;
+}
+
+.results h1 {
+  font-size: 100px;
+}
+
+.results p span {
+  font-size: 18px;
+}
+
+.cards p {
+  color: #ffffff;
+}
