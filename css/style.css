@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background-color: #b6c5d8;
+}
+.navs {
+  background: linear-gradient(90deg, #428387, #336876, #265166 100%);
+  border-radius: 0px 0px 10px 10px;
+}
+
+.navs a,
+.stick a {
+  text-decoration: none;
+  color: white;
+}
+
+.content {
+  height: 530px;
+  background-color: #b6c5d8;
+  position: relative;
+}
+
+.stick i {
+  color: #ffffff;
+  margin-top: 25px;
+}
+
+.ticks {
+  height: 20px;
+  margin-top: 30px;
+  border-radius: 20px 20px;
+  background-color: white;
+}
+
+.stick {
+  height: 100px;
+  position: absolute;
+  top: 70px;
+  background: linear-gradient(90deg, #428387, #336876, #265166 100%);
+  border-radius: 10px 10px;
+}
+
+.stick .fa-circle-user {
+  font-size: 50px;
+}
+
+.buttons {
+  padding: 15px 10px;
+  background: linear-gradient(90deg, #428387, #336876, #265166 100%);
+  border-radius: 10px 10px;
+  text-align: center;
+}
+
+.footers {
+  height: 120px;
+  background: linear-gradient(90deg, #428387, #336876, #265166 100%);
+  border-radius: 10px 10px;
+}
+
+.footers a,
+.footers i {
+  color: #ffffff;
+  font-size: 17px;
+}
+
+.footers span {
+  margin-top: 10px;
+}
