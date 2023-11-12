@@ -100,15 +100,14 @@ body {
 /* 2d */
 
 .flesh-content {
-  height: 530px;
+  /* height: 200vh; */
   /* background-color: #b6c5d8; */
-  position: relative;
+  /* position: relative; */
 }
 
 .flesh-card {
-  height: 100px;
-  position: absolute;
-  top: 70px;
+  /* height: 100px; */
+  /* padding-top: 10px; */
   border-radius: 10px 10px;
 }
 
@@ -119,11 +118,20 @@ body {
 
 .flesh-card p {
   color: #2a576c;
+  font-size: 18px;
 }
 
 .card {
-  color: #2a576c;
   padding: 15px 0;
+}
+
+.card span,
+.card p {
+  color: #2a576c;
+}
+
+.card span {
+  font-size: 45px;
 }
 
 .results {
@@ -139,16 +147,15 @@ body {
   font-size: 18px;
 }
 
-.cards p {
+.results .btns {
+  background-color: #2a576c;
   color: #ffffff;
+  margin-bottom: 10px;
+  padding: 8px 10px;
 }
 
-.success {
-  background-color: #2a576c;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 4px;
-  border-color: #2a576c;
+.cards p {
+  color: #ffffff;
 }
 
 .footer {
