@@ -30,7 +30,7 @@ body {
 
 .ticks {
   height: 20px;
-  margin-top: 30px;
+  margin-top: 32px;
   border-radius: 20px 20px;
   background-color: white;
 }
@@ -72,6 +72,13 @@ body {
   background: linear-gradient(90deg, #428387, #336876, #265166 100%);
 }
 
+.text {
+  text-align: center;
+  font-size: 18px;
+  color: black;
+  font-weight: bolder;
+}
+
 .footers {
   height: 100px;
   background: linear-gradient(90deg, #428387, #336876, #265166 100%);
@@ -85,6 +92,7 @@ body {
 }
 
 .footers span {
+  font-size: 15px;
   margin-top: 10px;
 }
 
