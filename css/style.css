@@ -18,7 +18,7 @@ body {
 }
 
 .content {
-  height: 530px;
+  height: 100vh;
   background-color: #b6c5d8;
   position: relative;
 }
@@ -73,7 +73,7 @@ body {
 }
 
 .footers {
-  height: 120px;
+  height: 100px;
   background: linear-gradient(90deg, #428387, #336876, #265166 100%);
   border-radius: 10px 10px;
 }
@@ -132,4 +132,21 @@ body {
 
 .cards p {
   color: #ffffff;
+}
+
+.success {
+  background-color: #2a576c;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border-color: #2a576c;
+}
+
+.footer {
+  position: fixed;
+  /* background-color: #2a576c; */
+  bottom: -10px;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
 }
