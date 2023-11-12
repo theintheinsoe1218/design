@@ -60,6 +60,7 @@ body {
 .button {
   width: 150px;
   height: 80px;
+  margin-bottom: 15px;
   background: linear-gradient(90deg, #428387, #336876, #265166 100%);
   text-align: center;
   border-radius: 10px 10px;
