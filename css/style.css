@@ -99,12 +99,6 @@ body {
 
 /* 2d */
 
-.flesh-content {
-  /* height: 200vh; */
-  /* background-color: #b6c5d8; */
-  /* position: relative; */
-}
-
 .flesh-card {
   /* height: 100px; */
   /* padding-top: 10px; */
@@ -165,4 +159,26 @@ body {
   width: 100%;
   padding: 10px 0;
   text-align: center;
+}
+
+/* modal */
+.modal {
+  color: #2a576c;
+}
+
+.modal .modal-btn a {
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  background-color: #2a576c;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.modal .modal-button {
+  color: #ffffff;
+  text-align: center;
+  background-color: #2a576c;
+  border-radius: 10px;
+  padding: 8px;
 }
