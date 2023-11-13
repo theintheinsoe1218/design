@@ -133,6 +133,14 @@
     const numCols = 5;
     const boxContainer = document.getElementById('boxContainer');
 
+
+    function digitBoxClickHandler() {
+    // Retrieve the text content of the clicked digit-box
+    const digitBoxText = this.textContent;
+    alert('Clicked digit-box with text: ' + digitBoxText);
+  }
+
+
     for (let i = 0; i < numRows; i++) {
     const rowContainer = document.createElement('div');
     rowContainer.className = 'd-flex justify-content-around';
@@ -149,6 +157,8 @@
 
       digitBox.appendChild(progressBar);
 
+      digitBox.addEventListener('click', digitBoxClickHandler);
+      
       rowContainer.appendChild(digitBox);
     }
 
