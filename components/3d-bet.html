@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- simple wheel css -->
+    <link rel="stylesheet" href="./../assets/css/simple-wheel.min.css">
+
+    <!-- Material Css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/material-icons@1.13.12/iconfont/material-icons.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 offset-lg-4 offset-md-4 navs fixed-top">
+          <div class="px-3 py-3">
+            <div class="d-flex justify-content-between">
+              <h5 class="mx-auto">
+                <a href="../index.html" class="text-white">Diamond 2D | 3D</a>
+              </h5>
+              <span>
+                <a class="material-icons text-white" href="../index.html"
+                  >refresh</a
+                >
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 100vh;">
+        <div
+          class="col-lg-4 col-md-4 offset-lg-4 offset-md-4 mt-5 py-4"
+          style="background-color: #b6c5d8"
+        >
+          <div class="flesh-card">
+            <div class="d-flex justify-content-between">
+              <div class="d-flex justify-content-between">
+                <span class="material-icons">account_balance_wallet</span>
+                <p class="px-2">လက်ကျန်ငွေ</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <span class="material-icons">clock</span>
+                <p class="px-2">ပိတ်ရန်ကျန်ချိန်</p>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between">
+              <p class="ms-5">0.00</p>
+              <p class="me-2">
+                2023-11-16 <br />
+                02:30:00PM
+              </p>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-around align-items-center my-3">
+            <button type="button" class="px-3 py-2 text-white border border-none rounded " style="background: linear-gradient(90deg, #428387, #336876, #265166 100%);">အိမ်မက်</button>
+            <input type="number" placeholder="ငွေပမာဏ (အနည်းဆုံး 100 ကျပ်)" class="form-control border border-none py-2" style="width: 55%;" required/>
+        </div>
+
+        <div class="d-flex justify-content-around align-items-center my-3">
+            <button type="button" class="px-3 py-2 text-white  border border-none rounded" style="background: linear-gradient(90deg, #428387, #336876, #265166 100%);">အခွင့်အရေး</button>
+            <input type="number" class="form-control border border-none py-2" style="width: 55%;" id="exampleInput" placeholder="စာရိုက်ပြီး ဂဏန်းရွေးမည်" required />
+        </div>
+
+
+        <div class="d-flex justify-content-around align-items-center mt-5">
+
+            <div id="group-01" class="simple-wheel-group ">
+
+                <div id="first" class="simple-wheel">
+                    <ul>
+                        <li>0</li>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li class="selected">5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        
+                    </ul>
+                </div>
+                <div id="separator" class="simple-wheel-separator">:</div>
+                <div id="second" class="simple-wheel">
+                    <ul>
+                        <li>0</li>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li class="selected">5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        
+                    </ul>
+                </div>
+            
+                <div id="separator" class="simple-wheel-separator">:</div>
+                <div id="third" class="simple-wheel">
+                    <ul>
+                        <li>0</li>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li class="selected">5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" style="background: linear-gradient(90deg, #428387, #336876, #265166 100%);" class="d-block text-white px-3 py-2 my-2  border border-none rounded bet_styles" >အမြန်ရွေး</button>
+
+                <button type="button" style="background: linear-gradient(90deg, #428387, #336876, #265166 100%);" class="d-block text-white px-3 py-2 my-2   border border-none rounded bet_styles">ပတ်လည်</button>
+
+                <button type="button" style="background: linear-gradient(90deg, #428387, #336876, #265166 100%);" class="d-block text-white px-3 py-2 my-2  border border-none rounded bet_styles">ရွေးမည်</button>
+            </div>
+        </div>
+
+
+        
+        </div>
+      </div>
+
+      <div class="row">
+        <div
+          class="col-lg-4 col-md-4 offset-lg-4 offset-md-4 py-3 fixed-bottom text-center"
+        >
+          <a href="3d-confirm.html" class="btn custom-btn">ထိုးမည်</a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+  <!-- simple wheel js -->
+  <script src="./../assets/js/simple-wheel.min.js"></script>
+  <script   src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
+<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+</html>

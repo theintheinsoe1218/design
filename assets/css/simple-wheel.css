@@ -1,0 +1,131 @@
+/*!
+ * simple-wheel v1.0.0
+ * Copyright 2021 Kuniyuki Masuo
+ */
+
+
+
+/* You Can Edit Here */
+ .simple-wheel,
+ .simple-wheel-separator{
+    height: auto;
+    max-width: 100%;  
+    font-size: 1.6rem;
+    background-color: #ffffff;
+    border: solid 1px #9b9b9b;
+    border-width: 1px 0;
+ }
+
+
+ .simple-wheel-group{
+  height:150px;
+ }
+
+
+
+
+/* ========================== */
+/*     DO NOT EDIT BELOW      */
+
+.simple-wheel-group{
+  display: flex;
+  flex-direction: row;
+}
+
+.simple-wheel,
+.simple-wheel-separator{
+
+  box-sizing: border-box;
+  overflow-y: hidden;
+  text-align:center;
+  position: relative;
+  
+}
+
+
+.simple-wheel-separator{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  touch-action: none;
+}
+
+
+.simple-wheel ul{
+  display: inline-block;
+  padding: 0;
+  margin:0;
+  overflow-x: hidden;
+  position: relative;
+}
+
+
+.simple-wheel li{
+  position: relative;
+  box-sizing: border-box;
+  padding: 0.3em 0;
+  font-size: 0.75em;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.simple-wheel li.selected{
+  font-size: 1em;
+  padding: 0.15em 0;
+  color: #3fa9f5;
+  font-weight: 500;
+}
+
+
+
+
+
+
+/*
+    スクロールコントローラー
+*/
+.simple-wheel + .sw_event_capture{
+  position: absolute;
+  width:0;
+  height:0;
+  /* /background-color: green; opacity: .3;  */
+  overflow-y: scroll;
+  text-align:center;
+  cursor: grab;
+  
+}
+/* スクロールバー非表示化 ；　Chrome, Safari 対応 */
+.simple-wheel + .sw_event_capture::-webkit-scrollbar {
+  display:none;
+}
+.simple-wheel + .sw_event_capture div{
+  width:100%;
+  height:100vh;
+}
+
+
+
+body.sw_preventSelectText,
+.simple-wheel,
+.simple-wheel-separator{
+  /* マウスでドラッグをシミュレート時に文字列を選択させないように */
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+body > #sw_mouseCaptureScreenToSimulateDragging{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  display: none;
+  cursor: grabbing;
+
+
+}

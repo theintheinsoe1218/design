@@ -310,3 +310,22 @@ body {
   color: #fff !important;
   width: 100%;
 }
+
+/* start 3d-bet */
+#group-01{
+  width:200px;
+  height:140px;
+}
+#group-01 #first{
+  width: 45%;
+}
+#group-01 #second{
+  width: 45%;
+}
+#group-01 #third{
+  width: 45%;
+}
+#group-01 #separator{
+  width: 10%;
+}
+/* end 3d-bet */
