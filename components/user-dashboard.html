@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2D Morning Play</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- Material Css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/material-icons@1.13.12/iconfont/material-icons.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 offset-lg-4 offset-md-4 navs fixed-top">
+            <div class="px-3 py-3">
+                <div class="d-flex justify-content-between">
+                <h5 class="mx-auto">
+                    <a href="../index.html" class="text-white"
+                    >Diamond 2D | 3D</a
+                    >
+                </h5>
+                <span>
+                    <a
+                    class="material-icons text-white"
+                    href="../index.html"
+                    >refresh</a
+                    >
+                </span>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="row">
+            <div
+            class="col-lg-4 col-md-4 offset-lg-4 offset-md-4 mt-5 py-4"
+            style="background-color: #b6c5d8"
+            >
+                <div style="margin-bottom: 100px;">
+                    <a href="#" class="card text-decoration-none text-dark shadow p-3 my-3">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="fas fa-list-ul list" aria-hidden="true"></i>
+                                </div>
+                                <p class="pb-0 mb-0">ကံထူးရှင်များ</p>
+                            </div>
+                            <div>
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="card text-decoration-none text-dark shadow p-3 my-3">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="fas fa-calendar-days list text-danger" aria-hidden="true"></i>
+                                </div>
+                                <p class="pb-0 mb-0">ထွက်ဂဏန်းများ</p>
+                            </div>
+                            <div>
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="card text-decoration-none text-dark shadow border border-1 p-3 my-3">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="fas fa-list-ul list" aria-hidden="true"></i>
+                                </div>
+                                <p class="pb-0 mb-0">မနက်ပိုင်းထီထိုးမှတ်တမ်း</p>
+                            </div>
+                            <div>
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="card text-decoration-none text-dark shadow border border-1 p-3 my-3">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="fas fa-list-ul list" aria-hidden="true"></i>
+                                </div>
+                                <p class="pb-0 mb-0">ညနေပိုင်းထီထိုးမှတ်တမ်း</p>
+                            </div>
+                            <div>
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="card text-decoration-none text-dark shadow border border-1 p-3 my-3">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="fas fa-calendar-days list text-danger" aria-hidden="true"></i>
+                                </div>
+                                <p class="pb-0 mb-0">မနက်ပိုင်းထွက်ဂဏန်းများ</p>
+                            </div>
+                            <div>
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                
+                    <a href="#" class="card text-decoration-none text-dark shadow border border-1 p-3 my-3">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="fas fa-calendar-days list text-danger" aria-hidden="true"></i>
+                                </div>
+                                <p class="pb-0 mb-0">ညနေပိုင်းထွက်ဂဏန်းများ</p>
+                            </div>
+                            <div>
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                
+                    <a href="#" class="card text-decoration-none text-dark shadow border border-1 p-3 my-3">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="fas fa-star list text-warning" aria-hidden="true"></i>
+                                </div>
+                                <p class="pb-0 mb-0">အမှတ် 0 (ကျပ်)</p>
+                            </div>
+                            <div>
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="card text-decoration-none text-dark shadow border border-1 p-3 my-3">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="fas fa-wallet list text-success" aria-hidden="true"></i>
+                                </div>
+                                <p class="pb-0 mb-0">ဘဏ်အကောင့်များ</p>
+                            </div>
+                            <div>
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="card text-decoration-none text-dark shadow border border-1 p-3 my-3">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="fas fa-lock text-success list" aria-hidden="true"></i>
+                                </div>
+                                <p class="pb-0 mb-0">လျှို့ဝှက်နံပါတ်ပြောင်းရန်</p>
+                            </div>
+                            <div>
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="card text-decoration-none text-dark shadow border border-1 p-3 my-3">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="fas fa-user-group text-success list" aria-hidden="true"></i>
+                                </div>
+                                <p class="pb-0 mb-0">မိတ်ဆက်ကုဒ်</p>
+                            </div>
+                            <div>
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="card text-decoration-none text-dark shadow border border-1 p-3 my-3">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="fas fa-comment-dots text-warning list" aria-hidden="true"></i>
+                                </div>
+                                <p class="pb-0 mb-0">အကြံပြုရန်</p>
+                            </div>
+                            <div>
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="card text-decoration-none text-dark shadow border border-1 p-3 my-3">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="fa-brands fa-google-play text-info list"></i>
+                                </div>
+                                <p class="pb-0 mb-0">ဗားရှင်း - 1.0.0</p>
+                            </div>
+                            <!-- <div>
+                                <i class="fas fa-play"></i>
+                            </div> -->
+                        </div>
+                    </a>
+                    <a href="#" class="card logout-btn text-decoration-none text-dark p-3 my-3">
+                        <div class="d-flex align-items-center">
+                            <div class="ms-3">
+                                <i class="fas fa-power-off list" aria-hidden="true"></i>
+                            </div>
+                            <button type="submit" class="border-0 bg-transparent">
+                                အကောင့်မှ ထွက်ခွာရန်
+                            </button>
+                            &nbsp; &nbsp; <i class="fas fa-chevron-right arrow-icon" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                </div>
+
+                
+            </div>
+
+        </div>
+        <div class="row footer">
+            <div class="col-lg-4 col-md-4 offset-lg-4 offset-md-4 py-4 footers">
+              <div class="d-flex justify-content-around">
+                <div class="text-center">
+                  <a href="#" class="text-decoration-none">
+                    <i class="fas fa-house-chimney"></i>
+                    <span class="d-block">ပင်မ</span>
+                  </a>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="text-decoration-none">
+                    <i class="fas fa-wallet"></i>
+                    <span class="d-block">ပိုက်ဆံအိတ်</span>
+                  </a>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="text-decoration-none">
+                    <i class="fas fa-gift"></i>
+                    <span class="d-block">ပရိုမိုရှင်း</span>
+                  </a>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="text-decoration-none">
+                    <i class="fas fa-phone"></i>
+                    <span class="d-block">ဝန်ဆောင်မှုဖုန်း</span>
+                  </a>
+                </div>
+                <div class="text-center">
+                  <a
+                    href="./components/user-dashboard.html"
+                    class="text-decoration-none"
+                  >
+                    <i class="fas fa-user"></i>
+                    <span class="d-block">ကျွန်ုပ်</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+        </div>
+
+      </div>
+    </div>
+
+    
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+  <!-- <script>
+    const numRows = 20;
+    const numCols = 5;
+    const boxContainer = document.getElementById('boxContainer');
+
+
+    function digitBoxClickHandler() {
+    const digitBoxText = this.textContent;
+    alert('Clicked box with text: ' + digitBoxText);
+  }
+
+
+    for (let i = 0; i < numRows; i++) {
+    const rowContainer = document.createElement('div');
+    rowContainer.className = 'd-flex justify-content-around';
+
+    for (let j = 0; j < numCols; j++) {
+      const digitBox = document.createElement('div');
+      digitBox.className = 'box btn';
+
+      const twoDigitNumber = ('0' + (i * numCols + j)).slice(-2);
+      digitBox.textContent = twoDigitNumber;
+
+      const progressBar = document.createElement('div');
+      progressBar.className = 'progress-bar mt-2';
+
+      digitBox.appendChild(progressBar);
+
+      digitBox.addEventListener('click', digitBoxClickHandler);
+      
+      rowContainer.appendChild(digitBox);
+    }
+
+    boxContainer.appendChild(rowContainer);
+  }
+  
+
+  </script> -->
+</html>

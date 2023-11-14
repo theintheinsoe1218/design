@@ -115,7 +115,7 @@ body {
   font-size: 18px;
 }
 
-.card {
+.cards {
   padding: 15px 0;
 }
 
@@ -238,4 +238,9 @@ body {
   height: 20%;
   background-color: green;
   border-radius: 0.25rem;
+}
+
+.list {
+  color: #2a576c;
+  font-size: 30px;
 }
