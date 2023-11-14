@@ -282,7 +282,9 @@ body {
   margin: auto;
 }
 
-.threed-btn {
+
+.custom {
+
   /* width: 100%; */
   display: block;
   height: 40px;
