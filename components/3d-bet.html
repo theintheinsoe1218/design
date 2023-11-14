@@ -14,7 +14,7 @@
     />
 
     <!-- simple wheel css -->
-    <link rel="stylesheet" href="./../assets/css/simple-wheel.min.css">
+    <link rel="stylesheet" href="./../assets/css/simple-wheel.min.css" />
 
     <!-- Material Css -->
     <link
@@ -36,6 +36,11 @@
         <div class="col-lg-4 col-md-4 offset-lg-4 offset-md-4 navs fixed-top">
           <div class="px-3 py-3">
             <div class="d-flex justify-content-between">
+              <span>
+                <a class="material-icons text-white" href="3d.html"
+                  >arrow_back</a
+                >
+              </span>
               <h5 class="mx-auto">
                 <a href="../index.html" class="text-white">Diamond 2D | 3D</a>
               </h5>
@@ -48,7 +53,7 @@
           </div>
         </div>
       </div>
-      <div class="row" style="height: 100vh;">
+      <div class="row" style="height: 100vh">
         <div
           class="col-lg-4 col-md-4 offset-lg-4 offset-md-4 mt-5 py-4"
           style="background-color: #b6c5d8"
@@ -75,81 +80,150 @@
           </div>
 
           <div class="d-flex justify-content-around align-items-center my-3">
-            <button type="button" class="px-3 py-2 text-white border border-none rounded " style="background: linear-gradient(90deg, #428387, #336876, #265166 100%);">အိမ်မက်</button>
-            <input type="number" placeholder="ငွေပမာဏ (အနည်းဆုံး 100 ကျပ်)" class="form-control border border-none py-2" style="width: 55%;" required/>
-        </div>
+            <button
+              type="button"
+              class="px-3 py-2 text-white border border-none rounded"
+              style="
+                background: linear-gradient(
+                  90deg,
+                  #428387,
+                  #336876,
+                  #265166 100%
+                );
+              "
+            >
+              အိမ်မက်
+            </button>
+            <input
+              type="number"
+              placeholder="ငွေပမာဏ (အနည်းဆုံး 100 ကျပ်)"
+              class="form-control border border-none py-2"
+              style="width: 55%"
+              required
+            />
+          </div>
 
-        <div class="d-flex justify-content-around align-items-center my-3">
-            <button type="button" class="px-3 py-2 text-white  border border-none rounded" style="background: linear-gradient(90deg, #428387, #336876, #265166 100%);">အခွင့်အရေး</button>
-            <input type="number" class="form-control border border-none py-2" style="width: 55%;" id="exampleInput" placeholder="စာရိုက်ပြီး ဂဏန်းရွေးမည်" required />
-        </div>
+          <div class="d-flex justify-content-around align-items-center my-3">
+            <button
+              type="button"
+              class="px-3 py-2 text-white border border-none rounded"
+              style="
+                background: linear-gradient(
+                  90deg,
+                  #428387,
+                  #336876,
+                  #265166 100%
+                );
+              "
+            >
+              အခွင့်အရေး
+            </button>
+            <input
+              type="number"
+              class="form-control border border-none py-2"
+              style="width: 55%"
+              id="exampleInput"
+              placeholder="စာရိုက်ပြီး ဂဏန်းရွေးမည်"
+              required
+            />
+          </div>
 
+          <div class="d-flex justify-content-around align-items-center mt-5">
+            <div id="group-01" class="simple-wheel-group">
+              <div id="first" class="simple-wheel">
+                <ul>
+                  <li>0</li>
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+                  <li>4</li>
+                  <li class="selected">5</li>
+                  <li>6</li>
+                  <li>7</li>
+                  <li>8</li>
+                  <li>9</li>
+                </ul>
+              </div>
+              <div id="separator" class="simple-wheel-separator">:</div>
+              <div id="second" class="simple-wheel">
+                <ul>
+                  <li>0</li>
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+                  <li>4</li>
+                  <li class="selected">5</li>
+                  <li>6</li>
+                  <li>7</li>
+                  <li>8</li>
+                  <li>9</li>
+                </ul>
+              </div>
 
-        <div class="d-flex justify-content-around align-items-center mt-5">
-
-            <div id="group-01" class="simple-wheel-group ">
-
-                <div id="first" class="simple-wheel">
-                    <ul>
-                        <li>0</li>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li class="selected">5</li>
-                        <li>6</li>
-                        <li>7</li>
-                        <li>8</li>
-                        <li>9</li>
-                        
-                    </ul>
-                </div>
-                <div id="separator" class="simple-wheel-separator">:</div>
-                <div id="second" class="simple-wheel">
-                    <ul>
-                        <li>0</li>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li class="selected">5</li>
-                        <li>6</li>
-                        <li>7</li>
-                        <li>8</li>
-                        <li>9</li>
-                        
-                    </ul>
-                </div>
-            
-                <div id="separator" class="simple-wheel-separator">:</div>
-                <div id="third" class="simple-wheel">
-                    <ul>
-                        <li>0</li>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li class="selected">5</li>
-                        <li>6</li>
-                        <li>7</li>
-                        <li>8</li>
-                        <li>9</li>
-                        
-                    </ul>
-                </div>
+              <div id="separator" class="simple-wheel-separator">:</div>
+              <div id="third" class="simple-wheel">
+                <ul>
+                  <li>0</li>
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+                  <li>4</li>
+                  <li class="selected">5</li>
+                  <li>6</li>
+                  <li>7</li>
+                  <li>8</li>
+                  <li>9</li>
+                </ul>
+              </div>
             </div>
 
             <div>
-                <button type="button" style="background: linear-gradient(90deg, #428387, #336876, #265166 100%);" class="d-block text-white px-3 py-2 my-2  border border-none rounded bet_styles" >အမြန်ရွေး</button>
+              <button
+                type="button"
+                style="
+                  background: linear-gradient(
+                    90deg,
+                    #428387,
+                    #336876,
+                    #265166 100%
+                  );
+                "
+                class="d-block text-white px-3 py-2 my-2 border border-none rounded bet_styles"
+              >
+                အမြန်ရွေး
+              </button>
 
-                <button type="button" style="background: linear-gradient(90deg, #428387, #336876, #265166 100%);" class="d-block text-white px-3 py-2 my-2   border border-none rounded bet_styles">ပတ်လည်</button>
+              <button
+                type="button"
+                style="
+                  background: linear-gradient(
+                    90deg,
+                    #428387,
+                    #336876,
+                    #265166 100%
+                  );
+                "
+                class="d-block text-white px-3 py-2 my-2 border border-none rounded bet_styles"
+              >
+                ပတ်လည်
+              </button>
 
-                <button type="button" style="background: linear-gradient(90deg, #428387, #336876, #265166 100%);" class="d-block text-white px-3 py-2 my-2  border border-none rounded bet_styles">ရွေးမည်</button>
+              <button
+                type="button"
+                style="
+                  background: linear-gradient(
+                    90deg,
+                    #428387,
+                    #336876,
+                    #265166 100%
+                  );
+                "
+                class="d-block text-white px-3 py-2 my-2 border border-none rounded bet_styles"
+              >
+                ရွေးမည်
+              </button>
             </div>
-        </div>
-
-
-        
+          </div>
         </div>
       </div>
 
@@ -169,6 +243,14 @@
   ></script>
   <!-- simple wheel js -->
   <script src="./../assets/js/simple-wheel.min.js"></script>
-  <script   src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
-<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+  ></script>
+  <link
+    href="https://www.jqueryscript.net/css/jquerysctipttop.css"
+    rel="stylesheet"
+    type="text/css"
+  />
 </html>
