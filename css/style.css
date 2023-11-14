@@ -284,15 +284,15 @@ body {
 
 .custom-btn {
   /* width: 100%; */
-  display: block;
-  height: 40px;
-  padding: 20px;
-  background: #2a576c;
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
-    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-  text-align: center;
-  border: 1px solid #2a576c;
-  color: #fff !important;
+  /* display: block; */
+  /* height: 40px; */
+  /* padding: 20px; */
+  /* background: #2a576c; */
+  /* box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, */
+  /* rgba(9, 30, 66, 0.08) 0px 0px 0px 1px; */
+  /* text-align: center; */
+  /* border: 1px solid #2a576c; */
+  /* color: #fff !important; */
 }
 
 .fixed-bottom {
@@ -312,20 +312,20 @@ body {
 }
 
 /* start 3d-bet */
-#group-01{
-  width:200px;
-  height:140px;
+#group-01 {
+  width: 200px;
+  height: 140px;
 }
-#group-01 #first{
+#group-01 #first {
   width: 45%;
 }
-#group-01 #second{
+#group-01 #second {
   width: 45%;
 }
-#group-01 #third{
+#group-01 #third {
   width: 45%;
 }
-#group-01 #separator{
+#group-01 #separator {
   width: 10%;
 }
 /* end 3d-bet */

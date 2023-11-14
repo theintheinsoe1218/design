@@ -121,42 +121,5 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"
   ></script>
-  <!-- <script>
-    const numRows = 20;
-    const numCols = 5;
-    const boxContainer = document.getElementById('boxContainer');
-
-
-    function digitBoxClickHandler() {
-    const digitBoxText = this.textContent;
-    alert('Clicked box with text: ' + digitBoxText);
-  }
-
-
-    for (let i = 0; i < numRows; i++) {
-    const rowContainer = document.createElement('div');
-    rowContainer.className = 'd-flex justify-content-around';
-
-    for (let j = 0; j < numCols; j++) {
-      const digitBox = document.createElement('div');
-      digitBox.className = 'box btn';
-
-      const twoDigitNumber = ('0' + (i * numCols + j)).slice(-2);
-      digitBox.textContent = twoDigitNumber;
-
-      const progressBar = document.createElement('div');
-      progressBar.className = 'progress-bar mt-2';
-
-      digitBox.appendChild(progressBar);
-
-      digitBox.addEventListener('click', digitBoxClickHandler);
-      
-      rowContainer.appendChild(digitBox);
-    }
-
-    boxContainer.appendChild(rowContainer);
-  }
   
-
-  </script> -->
 </html>
