@@ -296,3 +296,19 @@ body {
   color: #fff !important;
   width: 100%;
 }
+
+#additionalNumber input {
+  border: none;
+  background: transparent;
+  border-radius: 0;
+  border-bottom: 2px solid #265166;
+}
+
+#additionalNumber input:focus {
+  box-shadow: none;
+}
+
+#additionalNumber .btn-sm {
+  background: linear-gradient(90deg, #428387, #336876, #265166 100%);
+  color: #fff;
+}
