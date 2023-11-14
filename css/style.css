@@ -89,7 +89,7 @@ body {
 .footers a,
 .footers i {
   color: #ffffff;
-  font-size: 17px;
+  font-size: 25px;
 }
 
 .footers span {
@@ -115,7 +115,7 @@ body {
   font-size: 18px;
 }
 
-.card {
+.cards {
   padding: 15px 0;
 }
 
@@ -146,6 +146,7 @@ body {
   color: #ffffff;
   margin-bottom: 10px;
   padding: 8px 10px;
+  border-radius: 10px;
 }
 
 .cards p {
@@ -200,6 +201,19 @@ body {
 .custom-btn span {
   color: #2a576c;
   font-size: 18px;
+}
+
+.custom-btn icons {
+  font-size: 22px;
+}
+
+.custom-btn select {
+  background-color: #2a576c;
+  color: #ffffff;
+  padding: 8px 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  text-align: center;
 }
 
 .box-container {
@@ -312,3 +326,21 @@ body {
   background: linear-gradient(90deg, #428387, #336876, #265166 100%);
   color: #fff;
 }
+/* start 3d-bet */
+#group-01 {
+  width: 200px;
+  height: 140px;
+}
+#group-01 #first {
+  width: 45%;
+}
+#group-01 #second {
+  width: 45%;
+}
+#group-01 #third {
+  width: 45%;
+}
+#group-01 #separator {
+  width: 10%;
+}
+/* end 3d-bet */
