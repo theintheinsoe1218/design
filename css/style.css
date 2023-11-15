@@ -466,3 +466,11 @@ hr.my-custom-line {
   color: #632c94;
   font-size: 50px;
 }
+
+.box-container .box-btn{
+  background-color: #428387;
+  color: #fff;
+  margin: 3px 5px;
+}
+
+
