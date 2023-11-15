@@ -187,34 +187,40 @@
               </button>
           </div>
 
-          <a href="./quick-select3d.html"
-          type="button"
-          style="text-decoration: none;
-            background: linear-gradient(
-              90deg,
-              #428387,
-              #336876,
-              #265166 100%
-            );
-          "
-          class="text-white px-3 py-2 my-2 ms-2 border border-none rounded"
-        >
-        အမြန်ရွေးရန်
-        </a>
-
-        <a href="./3d-num.html"
-          style="text-decoration: none;
-            background: linear-gradient(
-              90deg,
-              #428387,
-              #336876,
-              #265166 100%
-            );
-          "
-          class="text-white px-3 py-2 my-2 ms-2 border border-none rounded"
-        >
-        အောက်2လုံး ဂဏန်းထိုးရန်
-        </a>
+          <div class="row d-flex justify-content-start align-items-center">
+            <div class="col-4 col-sm-12">
+              <a href="./quick-select3d.html"
+              type="button"
+              style="text-decoration: none;
+                background: linear-gradient(
+                  90deg,
+                  #428387,
+                  #336876,
+                  #265166 100%
+                );
+              "
+              class="text-white px-3 py-2 my-2 ms-2 border border-none rounded"
+            >
+            အမြန်ရွေးရန်
+              </a>
+            </div>
+  
+            <div class="col-6 col-sm-12">
+              <a href="./3d-num.html"
+              style="text-decoration: none;
+                background: linear-gradient(
+                  90deg,
+                  #428387,
+                  #336876,
+                  #265166 100%
+                );
+              "
+              class="text-white px-3 py-2 my-2 ms-2 border border-none rounded"
+            >
+            အောက်2လုံး ဂဏန်းထိုးရန်
+            </a>
+            </div>
+          </div>
 
         <div id="outputDiv">
 
@@ -227,11 +233,22 @@
         <div
           class="col-lg-4 col-md-4 offset-lg-4 offset-md-4 py-3 fixed-bottom text-center"
         >
-            <div class="d-flex justify-content-center align-items-center">
-              <button type="button" onclick="deleteNumbers()" class="btn remove-btn w-25">ဖျက်မည်</button>
-              <!-- <a type="button" onclick="deleteNumbers()" href="#" class="btn remove-btn w-25">ဖျက်မည်</a> -->
-            <a href="3d-confirm.html" class="btn custom w-25">ထိုးမည်</a>
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-5">
+            <a
+            type="button"
+            href="#"
+            class="btn remove-btn"
+            onclick="deleteNumbers()"
+            >ဖျက်မည်</a
+          >
           </div>
+          <div class="col-5">
+            <a href="#" class="btn play-btn ">ထိုးမည်</a>
+          </div>
+         
+        
+        </div>
         </div>
       </div>
     </div>
