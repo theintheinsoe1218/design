@@ -282,9 +282,7 @@ body {
   margin: auto;
 }
 
-
 .custom {
-
   /* width: 100%; */
   display: block;
   height: 40px;
@@ -466,4 +464,12 @@ hr.my-custom-line {
   background: white;
   color: #632c94;
   font-size: 50px;
+}
+
+/* 3d winner */
+.winner-card {
+  background: linear-gradient(90deg, #428387, #336876, #265166 100%);
+  border-radius: 10px;
+  color: #fff;
+  margin-bottom: 10px;
 }
