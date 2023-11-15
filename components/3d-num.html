@@ -220,14 +220,10 @@
                 "
                 class="text-white px-3 py-2 my-2 border border-none rounded"
               >
+                111</button
+              ><br />
 
-
-                111
-                </button><br/>
-                 
-                  <button
-
-
+              <button
                 type="button"
                 style="
                   background: linear-gradient(
@@ -279,24 +275,20 @@
         <div
           class="col-lg-4 col-md-4 offset-lg-4 offset-md-4 py-3 fixed-bottom text-center"
         >
-
-        <div class="row d-flex justify-content-center align-items-center">
-          <div class="col-5">
-            <a
-            type="button"
-            href="#"
-            class="btn remove-btn"
-            onclick="deleteNumbers()"
-            >ဖျက်မည်</a
-          >
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-5">
+              <a
+                type="button"
+                href="#"
+                class="btn remove-btn"
+                onclick="deleteNumbers()"
+                >ဖျက်မည်</a
+              >
+            </div>
+            <div class="col-5">
+              <a href="./3d-confirm.html" class="btn play-btn">ထိုးမည်</a>
+            </div>
           </div>
-          <div class="col-5">
-            <a href="./3d-confirm.html" class="btn play-btn ">ထိုးမည်</a>
-          </div>
-         
-        
-        </div>
-
         </div>
       </div>
     </div>
@@ -338,6 +330,7 @@
         button.textContent = number;
         button.className = 'outputButton';
         outputDiv.appendChild(button);
+        document.getElementById('numberInput').value = '';
       });
     }
 
