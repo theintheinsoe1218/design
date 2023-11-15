@@ -13,7 +13,6 @@
       crossorigin="anonymous"
     />
 
-
     <!-- Material Css -->
     <link
       rel="stylesheet"
@@ -29,15 +28,15 @@
     />
     <style>
       .outputButton {
-          margin: 5px;
-          padding: 5px;
-          background-color: #428387;
-          color: white;
-          border: none;
-          border-radius: 3px;
-          cursor: pointer;
+        margin: 5px;
+        padding: 5px;
+        background-color: #428387;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
       }
-  </style>
+    </style>
   </head>
   <body>
     <div class="container-fluid">
@@ -62,7 +61,7 @@
           </div>
         </div>
       </div>
-      <div class="row" style="padding-bottom: 50px;">
+      <div class="row" style="padding-bottom: 50px">
         <div
           class="col-lg-4 col-md-4 offset-lg-4 offset-md-4 mt-5 py-4"
           style="background-color: #b6c5d8"
@@ -104,7 +103,7 @@
               အိမ်မက်
             </button>
 
-            <h3 class="text-center">3D<br/><small>အောက်2လုံး</small></h3>
+            <h3 class="text-center">3D<br /><small>အောက်2လုံး</small></h3>
 
             <button
               type="button"
@@ -120,11 +119,9 @@
             >
               အခွင့်အရေး
             </button>
-            
           </div>
 
           <div class="d-flex justify-content-around align-items-center my-3">
-
             <input
               id="numberInput"
               type="number"
@@ -141,29 +138,61 @@
               class="form-control border border-none py-2 w-100"
               required
             />
-            
           </div>
-          <div id="outputDiv">
-
-          </div>
+          <div id="outputDiv"></div>
 
           <div class="d-flex justify-content-between align-items-center mt-5">
+            <button
+              type="button"
+              style="
+                background: linear-gradient(
+                  90deg,
+                  #428387,
+                  #336876,
+                  #265166 100%
+                );
+              "
+              class="text-white px-3 py-2 my-2 ms-5 border border-none rounded"
+            >
+              ပတ်လည်
+            </button>
 
-              <button
-                type="button"
-                style="
-                  background: linear-gradient(
-                    90deg,
-                    #428387,
-                    #336876,
-                    #265166 100%
-                  );
-                "
-                class="text-white px-3 py-2 my-2 ms-5 border border-none rounded"
-              >
-                ပတ်လည်
-              </button>
+            <button
+              onclick="showNumbers()"
+              type="button"
+              style="
+                background: linear-gradient(
+                  90deg,
+                  #428387,
+                  #336876,
+                  #265166 100%
+                );
+              "
+              class="text-white px-3 py-2 my-2 me-5 border border-none rounded"
+            >
+              ရွေးမည်
+            </button>
+          </div>
 
+          <div>
+            <p></p>
+            <button
+              type="button"
+              style="
+                background: linear-gradient(
+                  90deg,
+                  #428387,
+                  #336876,
+                  #265166 100%
+                );
+              "
+              class="text-white px-3 py-2 my-2 ms-5 border border-none rounded"
+            >
+              <p>ထိုင်းထီပထမဆု</p>
+              123456
+            </button>
+
+            <div class="d-flex justify-content-start align-items-center">
               <button
                 onclick="showNumbers()"
                 type="button"
@@ -175,46 +204,11 @@
                     #265166 100%
                   );
                 "
-                class="text-white px-3 py-2 my-2 me-5 border border-none rounded"
+                class="text-white px-3 py-2 my-2 border border-none rounded"
               >
-                ရွေးမည်
+                000
               </button>
-          </div>
-
-          <div>
-            <p></p>
               <button
-                  type="button"
-                  style="
-                    background: linear-gradient(
-                      90deg,
-                      #428387,
-                      #336876,
-                      #265166 100%
-                    );
-                  "
-                  class="text-white px-3 py-2 my-2 ms-5 border border-none rounded"
-                >
-                  <p>ထိုင်းထီပထမဆု</p>
-                  123456
-                </button>
-
-              <div class="d-flex justify-content-start align-items-center">
-                  <button
-                  type="button"
-                  style="
-                    background: linear-gradient(
-                      90deg,
-                      #428387,
-                      #336876,
-                      #265166 100%
-                    );
-                  "
-                  class="text-white px-3 py-2 my-2 border border-none rounded"
-                >
-                  000
-                  </button>
-                  <button
                 type="button"
                 style="
                   background: linear-gradient(
@@ -226,6 +220,8 @@
                 "
                 class="text-white px-3 py-2 my-2 border border-none rounded"
               >
+
+
                 111
                 </button><br/>
                   <button
@@ -243,6 +239,22 @@
                   222
                   </button>
                   <button
+
+
+                type="button"
+                style="
+                  background: linear-gradient(
+                    90deg,
+                    #428387,
+                    #336876,
+                    #265166 100%
+                  );
+                "
+                class="text-white px-3 py-2 my-2 border border-none rounded"
+              >
+                222
+              </button>
+              <button
                 type="button"
                 style="
                   background: linear-gradient(
@@ -255,27 +267,24 @@
                 class="text-white px-3 py-2 my-2 border border-none rounded"
               >
                 333
-                </button>
-                </div>
-                <button
-                type="button"
-                style="
-                  background: linear-gradient(
-                    90deg,
-                    #428387,
-                    #336876,
-                    #265166 100%
-                  );
-                "
-                class="text-white px-3 py-2 my-2 border border-none rounded"
-              >
-                63
               </button>
-              <div class="d-inline">ပေါက်ဂဏန်း</div>
-
-
+            </div>
+            <button
+              type="button"
+              style="
+                background: linear-gradient(
+                  90deg,
+                  #428387,
+                  #336876,
+                  #265166 100%
+                );
+              "
+              class="text-white px-3 py-2 my-2 border border-none rounded"
+            >
+              63
+            </button>
+            <div class="d-inline">ပေါက်ဂဏန်း</div>
           </div>
-
         </div>
       </div>
 
@@ -283,6 +292,7 @@
         <div
           class="col-lg-4 col-md-4 offset-lg-4 offset-md-4 py-3 fixed-bottom text-center"
         >
+
         <div class="row d-flex justify-content-center align-items-center">
           <div class="col-5">
             <a
@@ -299,6 +309,7 @@
          
         
         </div>
+
         </div>
       </div>
     </div>
@@ -314,42 +325,42 @@
     var enteredNumbers = [];
 
     function showNumbers() {
-        var inputText = document.getElementById("numberInput").value;
-        var outputDiv = document.getElementById("outputDiv");
+      var inputText = document.getElementById('numberInput').value;
+      var outputDiv = document.getElementById('outputDiv');
 
-        if (!/^\d{3}$/.test(inputText)) {
-            outputDiv.textContent = "Please enter exactly three digits.";
-        } else {
-            // Add the entered number to the array
-            enteredNumbers.push(inputText);
+      if (!/^\d{3}$/.test(inputText)) {
+        outputDiv.textContent = 'Please enter exactly three digits.';
+      } else {
+        // Add the entered number to the array
+        enteredNumbers.push(inputText);
 
-            // Display all entered numbers with buttons
-            updateOutput();
-        }
+        // Display all entered numbers with buttons
+        updateOutput();
+      }
     }
 
     function updateOutput() {
-        var outputDiv = document.getElementById("outputDiv");
+      var outputDiv = document.getElementById('outputDiv');
 
-        // Clear previous content
-        outputDiv.innerHTML = "";
+      // Clear previous content
+      outputDiv.innerHTML = '';
 
-        // Create a button for each entered number
-        enteredNumbers.forEach(function (number) {
-            var button = document.createElement("button");
-            button.textContent = number;
-            button.className = "outputButton";
-            outputDiv.appendChild(button);
-        });
+      // Create a button for each entered number
+      enteredNumbers.forEach(function (number) {
+        var button = document.createElement('button');
+        button.textContent = number;
+        button.className = 'outputButton';
+        outputDiv.appendChild(button);
+      });
     }
 
     function deleteNumbers() {
-        // Clear the array of entered numbers
-        enteredNumbers = [];
+      // Clear the array of entered numbers
+      enteredNumbers = [];
 
-        // Clear the outputDiv
-        var outputDiv = document.getElementById("outputDiv");
-        outputDiv.innerHTML = "";
+      // Clear the outputDiv
+      var outputDiv = document.getElementById('outputDiv');
+      outputDiv.innerHTML = '';
     }
-</script>
+  </script>
 </html>

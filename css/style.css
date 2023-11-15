@@ -467,10 +467,16 @@ hr.my-custom-line {
   font-size: 50px;
 }
 
-.box-container .box-btn{
+/* 3d winner */
+.winner-card {
+  background: linear-gradient(90deg, #428387, #336876, #265166 100%);
+  border-radius: 10px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.box-container .box-btn {
   background-color: #428387;
   color: #fff;
   margin: 3px 5px;
 }
-
-
