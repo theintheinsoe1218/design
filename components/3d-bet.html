@@ -27,6 +27,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <style>
+        .outputButton {
+            margin: 5px;
+            padding: 5px;
+            background-color: #428387;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
   </head>
   <body>
     <div class="container-fluid">
@@ -51,10 +62,10 @@
           </div>
         </div>
       </div>
-      <div class="row" style="height: 100vh">
+      <div class="row" >
         <div
-          class="col-lg-4 col-md-4 offset-lg-4 offset-md-4 mt-5 py-4"
-          style="background-color: #b6c5d8"
+          class="col-lg-4 col-md-4 offset-lg-4 offset-md-4 mt-5"
+          style="min-height: 100vh; background-color: #b6c5d8;padding-top: 50px;padding-bottom: 200px;"
         >
           <div class="flesh-card">
             <div class="d-flex justify-content-between">
@@ -115,10 +126,12 @@
           <div class="d-flex justify-content-around align-items-center my-3">
 
             <input
-              type="number"
+              id="numberInput"
+              type="text"
               class="form-control border border-none py-2 mx-2 w-100"
               id="exampleInput"
               placeholder="စာရိုက်ပြီး ဂဏန်းရွေးမည်"
+              maxlength="3"
               required
             />
 
@@ -168,39 +181,50 @@
                   );
                 "
                 class="text-white px-3 py-2 my-2 ms-2 border border-none rounded"
+                onclick="showNumbers()"
               >
               ရွေးမည်
               </button>
           </div>
 
-          <a href="./quick-select3d.html"
-          type="button"
-          style="text-decoration: none;
-            background: linear-gradient(
-              90deg,
-              #428387,
-              #336876,
-              #265166 100%
-            );
-          "
-          class="text-white px-3 py-2 my-2 ms-2 border border-none rounded"
-        >
-        အမြန်ရွေးရန်
-        </a>
+          <div class=" ">
 
-        <a href="./3d-num.html"
-          style="text-decoration: none;
-            background: linear-gradient(
-              90deg,
-              #428387,
-              #336876,
-              #265166 100%
-            );
-          "
-          class="text-white px-3 py-2 my-2 ms-2 border border-none rounded"
-        >
-        အောက်2လုံး ဂဏန်းထိုးရန်
-      </a>
+            <a href="./quick-select3d.html"
+              type="button"
+              style="text-decoration: none;
+                background: linear-gradient(
+                  90deg,
+                  #428387,
+                  #336876,
+                  #265166 100%
+                );
+              "
+              class=" text-white px-3 py-2 my-2 ms-2 border border-none rounded"
+            >
+            အမြန်ရွေးရန်
+              </a>
+              
+          </div>
+
+          <div>
+            <a href="./3d-num.html"
+              style="text-decoration: none;
+                background: linear-gradient(
+                  90deg,
+                  #428387,
+                  #336876,
+                  #265166 100%
+                );
+              "
+              class="text-white px-3 py-2 my-2 ms-2 border border-none rounded"
+            >
+            အောက်2လုံး ဂဏန်းထိုးရန်
+            </a>
+          </div>
+
+        <div id="outputDiv">
+
+        </div>
 
         </div>
       </div>
@@ -209,8 +233,22 @@
         <div
           class="col-lg-4 col-md-4 offset-lg-4 offset-md-4 py-3 fixed-bottom text-center"
         >
-          <a href="#" class="btn">ဖျက်မည်</a>
-          <a href="3d-confirm.html" class="btn custom-btn">ထိုးမည်</a>
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-5">
+            <a
+            type="button"
+            href="#"
+            class="btn remove-btn"
+            onclick="deleteNumbers()"
+            >ဖျက်မည်</a
+          >
+          </div>
+          <div class="col-5">
+            <a href="./3d-confirm.html" class="btn play-btn ">ထိုးမည်</a>
+          </div>
+         
+        
+        </div>
         </div>
       </div>
     </div>
@@ -220,4 +258,50 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"
   ></script>
+
+  <!-- custom js -->
+  <script>
+    // Array to store entered numbers
+    var enteredNumbers = [];
+
+    function showNumbers() {
+        var inputText = document.getElementById("numberInput").value;
+        var outputDiv = document.getElementById("outputDiv");
+
+        if (!/^\d{3}$/.test(inputText)) {
+            outputDiv.textContent = "Please enter exactly three digits.";
+        } else {
+            // Add the entered number to the array
+            enteredNumbers.push(inputText);
+
+            // Display all entered numbers with buttons
+            updateOutput();
+        }
+    }
+
+    function updateOutput() {
+        var outputDiv = document.getElementById("outputDiv");
+
+        // Clear previous content
+        outputDiv.innerHTML = "";
+
+        // Create a button for each entered number
+        enteredNumbers.forEach(function (number) {
+            var button = document.createElement("button");
+            button.textContent = number;
+            button.className = "outputButton";
+            outputDiv.appendChild(button);
+        });
+        
+    }
+
+    function deleteNumbers() {
+        // Clear the array of entered numbers
+        enteredNumbers = [];
+
+        // Clear the outputDiv
+        var outputDiv = document.getElementById("outputDiv");
+        outputDiv.innerHTML = "";
+    }
+</script>
 </html>
