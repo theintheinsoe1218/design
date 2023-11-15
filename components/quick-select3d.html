@@ -237,14 +237,24 @@
         <div
           class="col-lg-4 col-md-4 offset-lg-4 offset-md-4 py-3 fixed-bottom text-center"
         >
-          <a
-            type="button"
-            href="#"
-            class="btn remove-btn w-25"
-            onclick="deleteTotalCount()"
-            >ဖျက်မည်</a
-          >
-          <a href="#" class="btn custom w-25">ထိုးမည်</a>
+
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-5">
+              <a
+              type="button"
+              href="#"
+              class="btn remove-btn"
+              onclick="deleteTotalCount()"
+              >ဖျက်မည်</a
+            >
+            </div>
+            <div class="col-5">
+              <a href="./3d-confirm.html" class="btn play-btn ">ထိုးမည်</a>
+            </div>
+           
+          
+          </div>
+
         </div>
       </div>
     </div>
@@ -284,7 +294,9 @@
         document.getElementById('totalCount').textContent = total;
 
         // Reset button colors
-        var buttons = document.querySelectorAll('.button');
+
+        var buttons = document.querySelectorAll('.btn');
+
         buttons.forEach((button) => button.classList.remove('toggled'));
       }
 
